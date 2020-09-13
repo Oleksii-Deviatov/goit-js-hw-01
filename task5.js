@@ -2,7 +2,10 @@ let deliveryPrice;
 
 let country = prompt('Укажите страну для доставки');
 let message;
-if (!country) {
+
+if (country === '') {
+  message = 'Страна доставки не указана';
+} else if (!country) {
   message = 'Отменено пользователем';
 } else {
   country = country.toLowerCase();
