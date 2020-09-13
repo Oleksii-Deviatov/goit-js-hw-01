@@ -11,3 +11,14 @@
 
 let input;
 let total = 0;
+
+while (true) {
+  input = prompt('Введите число:');
+  if (input !== null) {
+    input = Number(input);
+    total += input;
+  } else if (input === null) {
+    break;
+  }
+}
+alert(`Общая сумма чисел равна ${total}`);
