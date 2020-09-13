@@ -1,8 +1,9 @@
 let input;
 let total = 0;
+let count = 1;
 
 while (true) {
-  input = prompt('Введите число:');
+  input = prompt(`Введите число ${count} :`);
   if (input === null && total === 0) {
     alert('Отменено пользователем');
     break;
@@ -13,9 +14,9 @@ while (true) {
 
   input = Number(input);
 
-  if (Number.isNaN(input) === false) {
+  if (!Number.isNaN(input)) {
     total += input;
-    console.log(input);
+    count += 1;
   } else {
     alert('Введено не число');
   }
