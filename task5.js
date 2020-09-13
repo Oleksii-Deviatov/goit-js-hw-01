@@ -14,7 +14,7 @@ if (country === '') {
     case 'китай':
       country = 'Китай';
       deliveryPrice = 100;
-      break;
+    // break;
 
     case 'чили':
       country = 'Чили';
